@@ -2,7 +2,7 @@
 Assignment
 
 
-renderlink:https://f2wb30palla.onrender.com
+renderlink:https://f2db30palla.onrender.com
 
 
 ### Class juice details :

@@ -1,5 +1,5 @@
 {
-  "name": "f2wb30palla",
+  "name": "f2db30palla",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -24,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998/issues"
   },
-  "homepage": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998#readme"
+  "homepage": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998#readme",
+  "devDependencies": {}
 }
