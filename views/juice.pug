@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  - let results=[{juice_flavour:"blue berry",juice_name:buleberry,juice_quantity:250},{juice_flavour:"mango",juice_name:apple,juice_quantity:300},{juice_flavour:"orange",juice_name:orange,juice_quantity:350}]
+  div(class="container-fluid")
+  div(class="row")
+   each value,index in results
+    div(class="col-sm-2" onclick=`buy(${index})`)  #{value.juice_flavour} drink, name #{value.juice_name}, quantity #{value.juice_quantity}
+   script.
+    function buy(index)
+    {
+      alert(`Your purchased Item ${index+1}`)
+    }

@@ -1,0 +1,28 @@
+{
+  "name": "f2wb30palla",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "description": "Assignment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998/issues"
+  },
+  "homepage": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998#readme"
+}
