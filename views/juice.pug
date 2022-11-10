@@ -2,13 +2,16 @@ extends layout
 
 block content
   h1= title
-  - let results=[{juice_flavour:"blue berry",juice_name:buleberry,juice_quantity:250},{juice_flavour:"mango",juice_name:apple,juice_quantity:300},{juice_flavour:"orange",juice_name:orange,juice_quantity:350}]
-  div(class="container-fluid")
-  div(class="row")
-   each value,index in results
-    div(class="col-sm-2" onclick=`buy(${index})`)  #{value.juice_flavour} drink, name #{value.juice_name}, quantity #{value.juice_quantity}
-   script.
-    function buy(index)
-    {
-      alert(`Your purchased Item ${index+1}`)
+  - var results = [{"juice_flavour": "Carrot", "juice_name": "Healthy", "juice_quantity": 3.78},{"juice_flavour": "strawberry", "juice_name": "WOrkout", "juice_quantity": 5.90},{"juice_flavour": "Banana", "juice_name": "Fat burner", "juice_quantity": 5.44}]
+  div.container-fluid
+    div.row
+        each item, index in results
+            div.col-sm-2(onclick=`buy(${index})`) juice flavour: #{item["juice_flavour"]} <br> juice name: #{item["juice_name"]} <br> juice quantity: #{item["juice_quantity"]}
+  
+  
+  script.
+    function buy(index) {
+      alert("You purchased item " + index)
     }
+
+  

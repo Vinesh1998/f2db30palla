@@ -8,8 +8,10 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
+    "mongoose": "^6.7.2",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
@@ -24,6 +26,5 @@
   "bugs": {
     "url": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998/issues"
   },
-  "homepage": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/Vinesh1998/-44563-webapps-assignment-10-Vinesh1998#readme"
 }

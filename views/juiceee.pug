@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+  h1= title
+  let juice=results;
+    div.container-fluid
+      div.row
+          each item, index in results
+              div.col-sm-2(onclick=`buy(${index})`) #{item["juice_flavour"]}, #{item["juice_name"]}, #{item["juice_quantity"]}
+        
+
+    script. 
+        function buy(index) {
+            alert("You purchased item " + index);
+        }
