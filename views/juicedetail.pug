@@ -3,6 +3,9 @@ extends layout
 block content 
   h1= title 
  
+ if (toShow == null) 
+    h2 No instance to Update
+  else
   - let juiceid = toShow._id 
   - let juice_flavour = toShow.juice_flavour 
   - let juice_name = toShow.juice_name
