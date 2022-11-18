@@ -3,15 +3,21 @@ extends layout
 block content
   h1= title
   - var results = [{"juice_flavour": "Carrot", "juice_name": "Healthy", "juice_quantity": 3.78},{"juice_flavour": "strawberry", "juice_name": "WOrkout", "juice_quantity": 5.90},{"juice_flavour": "Banana", "juice_name": "Fat burner", "juice_quantity": 5.44}]
-  div.container-fluid
-    div.row
+  div(class="container-fluid")
+    div(class="row m-1")
         each item, index in results
+            - let destination = `dispatch(\"/juices/update?id=${item._id}\")` 
             div.col-sm-2(onclick=`buy(${index})`) juice flavour: #{item["juice_flavour"]} <br> juice name: #{item["juice_name"]} <br> juice quantity: #{item["juice_quantity"]}
+            button.btn( class="btn-primary ml-1", onclick= destination) Update 
   
   
   script.
     function buy(index) {
       alert("You purchased item " + index)
     }
-
+  script. 
+    function dispatch(path){ 
+      window.location.href=path 
+    } 
+ 
   
